@@ -53,6 +53,13 @@ The font can be built by following these steps:
 4. After a successful build output will be in the `target/VAR`
    subdirectory
 
+# Help or Advice
+
+If you have questions about this repository or are having trouble
+building from the sources, open the Discussions tab and look to see
+if there is relevant help. If not, start a new discussion and we will
+try to assist you or provide you with more information.
+
 # Kerning and Mark Data Processing
 
 The files `kern.fea` and `locations.fea` in the `features` directory
