@@ -20,8 +20,8 @@ This example is intended to serve multiple purposes:
 *  To provide a context for experimenting with the grammar by
    adding to or changing one or more feature files, building
    the altered font, and examining the result.
-*  To introduce a beta version of AFDKO that supports the new
-   syntax.
+*  To introduce a beta version of AFDKO that supports the
+   feature file syntax additions.
 
 # Building the sources
 
@@ -50,6 +50,8 @@ The font can be built by following these steps:
    show the output of the commands it runs. The optional `--hinted`
    argument will use `otfautohint` to add PostScript-style hinting
    to the built font.
+4. After a successful build output will be in the `target/VAR`
+   subdirectory
 
 # Kerning and Mark Data Processing
 
@@ -67,8 +69,8 @@ produced by running
 bin/markFeatureWriter.py -t -m Roman/SourceSerif4Variable-Roman.designspace
 ```
 
-It is not necessary to re-run these scripts to build the font,
-but if you wish to run them the Python packages `fonttools` and
+It is not necessary to re-run these scripts to build the font.
+If you wish to run them the Python packages `fonttools` and
 `defcon` must be installed.
 
 The scripts are included to demonstrate how UFO kerning and mark
@@ -80,5 +82,4 @@ by the output of `markFeatureWriter.py`, but only produced by
 `kernFeatureWriter.py`) are taken from the `com.adobe.shortInstanceName`
 entry in each UFO's `lib.plist` file. If this key is not present the
 script will automaticaly generate a (not very clever) location name
-for the instance stored in that UFO.
-
+for the instance corresponding to that UFO.
