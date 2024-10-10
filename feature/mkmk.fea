@@ -1,0 +1,43 @@
+lookup MKMK_MARK_above {
+	lookupflag MarkAttachmentType @MC_above;
+
+	pos mark gravecmb <anchor (<0 758> @CEL:<0 758> @CR:<0 776> @CBl:<0 792> @TEL:<0 738> @TBl:<0 784> @DEL:<0 705> @DR:<0 725> @DBl:<0 736>)> mark @MC_above;
+	pos mark acutecmb <anchor (<0 758> @CEL:<0 758> @CR:<0 776> @CBl:<0 792> @TEL:<0 738> @TBl:<0 784> @DEL:<0 705> @DR:<0 725> @DBl:<0 736>)> mark @MC_above;
+	pos mark gravecmb.cap <anchor (<0 878> @CEL:<0 860> @CR:<0 880> @CBl:<0 882> @TEL:<0 859> @TBl:<0 881> @DEL:<0 855> @DR:<0 864> @DBl:<0 867>)> mark @MC_above;
+	pos mark acutecmb.cap <anchor (<0 878> @CEL:<0 860> @CR:<0 880> @CBl:<0 882> @TEL:<0 859> @TBl:<0 881> @DEL:<0 855> @DR:<0 864> @DBl:<0 867>)> mark @MC_above;
+	pos mark circumflexcmb <anchor (<0 744> @CEL:<0 740> @CR:<0 768> @CBl:<0 770> @TEL:<0 719> @TBl:<0 757> @DEL:<0 693> @DR:<0 711> @DBl:<0 717>)> mark @MC_above;
+	pos mark circumflexcmb.cap <anchor (<0 857> @CEL:<0 834> @CR:<0 864> @CBl:<0 876> @TEL:<0 842> @TBl:<0 882> @DEL:<0 840> @DR:<0 860> @DBl:<0 858>)> mark @MC_above;
+	pos mark tildecmb <anchor (<0 715> @CEL:<0 712> @CR:<1 742> @CBl:<0 751> @TEL:<0 692> @TBl:<0 734> @DEL:<0 664> @DR:<0 680> @DBl:<0 686>)> mark @MC_above;
+	pos mark tildecmb.cap <anchor (<0 864> @CEL:<0 844> @CR:<0 860> @CBl:<0 860> @TEL:<0 845> @TBl:<0 859> @DEL:<0 840> @DR:<0 849> @DBl:<0 850>)> mark @MC_above;
+	pos mark macroncmb <anchor (<0 659> @CEL:<0 680> @CR:<0 688> @CBl:<0 714> @TEL:<0 657> @TBl:<0 683> @DEL:<0 630> @DR:<0 618> @DBl:<0 627>)> mark @MC_above;
+	pos mark macroncmb.cap <anchor (<0 822> @CEL:<0 794> @CR:<0 820> @CBl:<0 820> @TEL:<0 793> @TBl:<0 817> @DEL:<0 788> @DR:<0 798> @DBl:<0 793>)> mark @MC_above;
+	pos mark brevecmb <anchor (<0 734> @CEL:<0 748> @CR:<0 748> @CBl:<0 751> @TEL:<0 730> @TBl:<0 738> @DEL:<-4 669> @DR:<-4 681> @DBl:<0 682>)> mark @MC_above;
+	pos mark brevecmb.cap <anchor (<0 870> @CEL:<0 864> @CR:<0 872> @CBl:<0 856> @TEL:<0 859> @TBl:<0 856> @DEL:<0 853> @DR:<0 855> @DBl:<0 845>)> mark @MC_above;
+	pos mark dotaccentcmb <anchor (<0 717> @CEL:<0 722> @CR:<0 744> @CBl:<0 762> @TEL:<0 689> @TBl:<0 734> @DEL:<0 677> @DR:<0 674> @DBl:<0 689>)> mark @MC_above;
+	pos mark dotaccentcmb.cap <anchor (<0 865> @CEL:<0 828> @CR:<0 868> @CBl:<0 880> @TEL:<0 823> @TBl:<0 870> @DEL:<0 813> @DR:<0 849> @DBl:<0 851>)> mark @MC_above;
+	pos mark dieresiscmb <anchor (<0 710> @CEL:<0 720> @CR:<0 740> @CBl:<0 758> @TEL:<0 703> @TBl:<0 725> @DEL:<0 673> @DR:<0 666> @DBl:<0 679>)> mark @MC_above;
+	pos mark dieresiscmb.cap <anchor (<0 855> @CEL:<0 824> @CR:<0 872> @CBl:<0 868> @TEL:<0 820> @TBl:<0 850> @DEL:<0 809> @DR:<0 845> @DBl:<0 835>)> mark @MC_above;
+	pos mark ringcmb <anchor (<0 753> @CEL:<0 764> @CR:<0 772> @CBl:<0 816> @TEL:<0 743> @TBl:<0 794> @DEL:<0 694> @DR:<0 709> @DBl:<0 728>)> mark @MC_above;
+	pos mark ringcmb.cap <anchor (<0 908> @CEL:<0 888> @CR:<0 912> @CBl:<0 900> @TEL:<0 887> @TBl:<0 895> @DEL:<0 886> @DR:<0 900> @DBl:<0 896>)> mark @MC_above;
+	pos mark hungarumlautcmb <anchor (<0 756> @CEL:<0 760> @CR:<0 776> @CBl:<0 820> @TEL:<0 741> @TBl:<0 800> @DEL:<0 711> @DR:<0 733> @DBl:<0 756>)> mark @MC_above;
+	pos mark hungarumlautcmb.cap <anchor (<0 889> @CEL:<0 867> @CR:<0 888> @CBl:<0 902> @TEL:<0 866> @TBl:<0 901> @DEL:<0 862> @DR:<0 873> @DBl:<0 902>)> mark @MC_above;
+	pos mark caroncmb <anchor (<0 739> @CEL:<0 740> @CR:<0 768> @CBl:<0 798> @TEL:<0 716> @TBl:<0 779> @DEL:<0 697> @DR:<0 725> @DBl:<0 717>)> mark @MC_above;
+	pos mark caroncmb.cap <anchor (<0 869> @CEL:<0 868> @CR:<0 868> @CBl:<0 900> @TEL:<0 865> @TBl:<0 892> @DEL:<0 852> @DR:<0 862> @DBl:<0 873>)> mark @MC_above;
+	pos mark hoicmb <anchor (<0 747> @CEL:<0 732> @CR:<1 748> @CBl:<0 819> @TEL:<0 729> @TBl:<0 799> @DEL:<0 703> @DR:<0 711> @DBl:<0 748>)> mark @MC_above;
+	pos mark hoicmb.cap <anchor (<0 883> @CEL:<0 864> @CR:<0 880> @CBl:<0 923> @TEL:<0 864> @TBl:<0 919> @DEL:<0 856> @DR:<0 871> @DBl:<0 894>)> mark @MC_above;
+	pos mark brevecmb.cyr <anchor (<0 733> @CEL:<0 710> @CR:<0 736> @CBl:<0 768> @TEL:<0 708> @TBl:<0 747> @DEL:<0 641> @DR:<0 697> @DBl:<0 715>)> mark @MC_above;
+	pos mark brevecmb.cyrcap <anchor (<0 874> @CEL:<0 842> @CR:<0 888> @CBl:<0 906> @TEL:<0 838> @TBl:<0 883> @DEL:<0 840> @DR:<0 886> @DBl:<0 878>)> mark @MC_above;
+} MKMK_MARK_above;
+
+
+lookup MKMK_MARK_below {
+	lookupflag MarkAttachmentType @MC_below;
+
+	pos mark commabelowcmb <anchor (<0 -253> @CEL:<0 -232> @CR:<0 -260> @CBl:<1 -284> @TEL:<0 -239> @TBl:<0 -275> @DEL:<0 -217> @DR:<0 -230> @DBl:<-4 -257>)> mark @MC_below;
+	pos mark verticallinebelowcmb <anchor (<0 -267> @CEL:<0 -264> @CR:<0 -268> @CBl:<0 -248> @TEL:<0 -254> @TBl:<0 -270> @DEL:<0 -256> @DR:<0 -246> @DBl:<0 -258>)> mark @MC_below;
+	pos mark brevebelowcmb <anchor (<0 -229> @CEL:<0 -230> @CR:<0 -220> @CBl:<0 -231> @TEL:<0 -205> @TBl:<0 -243> @DEL:<0 -203> @DR:<0 -216> @DBl:<0 -209>)> mark @MC_below;
+	pos mark dieresisbelowcmb <anchor (<0 -193> @CEL:<0 -168> @CR:<0 -197> @CBl:<0 -223> @TEL:<0 -163> @TBl:<0 -229> @DEL:<0 -149> @DR:<0 -179> @DBl:<0 -207>)> mark @MC_below;
+	pos mark dotbelowcmb <anchor (<0 -203> @CEL:<0 -170> @CR:<0 -204> @CBl:<0 -222> @TEL:<0 -165> @TBl:<0 -234> @DEL:<0 -153> @DR:<0 -187> @DBl:<0 -219>)> mark @MC_below;
+	pos mark macronbelowcmb <anchor (<0 -175> @CEL:<0 -122> @CR:<0 -181> @CBl:<0 -172> @TEL:<0 -138> @TBl:<0 -201> @DEL:<0 -134> @DR:<0 -146> @DBl:<0 -173>)> mark @MC_below;
+} MKMK_MARK_below;
+

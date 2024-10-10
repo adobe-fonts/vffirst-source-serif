@@ -1,0 +1,35 @@
+include (locations.fea);
+
+include (familyTables.fea);
+
+table name {
+    include (familynameIDs.fea);
+    include (nameIDs.fea);
+} name;
+
+include (familyGSUB.fea);
+include (STAT.fea);
+
+table OS/2 {
+    include (os2.fea);
+    include (familyOS2.fea);
+} OS/2;
+
+# GPOS -----------------------------------
+
+feature mark {
+    include (mark.fea);
+} mark;
+
+feature mkmk {
+    include (mkmk.fea);
+} mkmk;
+
+feature kern {
+    lookupflag IgnoreMarks;
+    lookup KERN useExtension {
+        include (kern.fea);
+    } KERN;
+
+    include (kern_ctxt.fea);
+} kern;

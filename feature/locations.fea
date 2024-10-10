@@ -1,0 +1,10 @@
+# Named locations
+
+locationDef wght=0d, opsz=8d @CEL;
+locationDef wght=394d, opsz=8d @CR;
+locationDef wght=1000d, opsz=8d @CBl;
+locationDef wght=0d, opsz=20d @TEL;
+locationDef wght=1000d, opsz=20d @TBl;
+locationDef wght=0d, opsz=60d @DEL;
+locationDef wght=394d, opsz=60d @DR;
+locationDef wght=1000d, opsz=60d @DBl;
