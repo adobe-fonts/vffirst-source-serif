@@ -49,6 +49,19 @@ The font can be built by following these steps:
 4. After a successful build output will be in the `target/VAR`
    subdirectory
 
+# AFDKO 5.0.0b15
+
+The AFDKO release that can build these sources is fully-featured
+but experimental. The current (at the time of writing) 4.0.1 release
+of AFDKO is built from C-language sources for separate programs
+packaged in a somewhat idiosyncratic way. Virtually all of the code
+for the 5.0.0b15 release has been ported to at least low-level C++
+and much of it is fully ported to modern, object-based C++. It is
+intended to do all of what 4.0.1 does, and passes our automated test
+suite, but there may still be bugs. We do not recommend building
+fonts intended for publication with the new code until it is included
+in a "standard" release.
+
 # Help or Advice
 
 If you have questions about this repository or are having trouble
