@@ -1,12 +1,8 @@
 # Summary
 
 This repository provided as a working example of additions to
-the Adobe OpenType Feature File Specification currently under
-review at
-
-```
-https://github.com/adobe-type-tools/feature_file_change_review
-```
+the Adobe OpenType Feature File Specification currently [under
+review](https://github.com/adobe-type-tools/feature_file_change_review).
 
 It contains glyph outline sources for the Roman face of Source
 Serif 4 Variable (in the form of 9 UFOs) together with a single
