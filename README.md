@@ -49,7 +49,7 @@ The font can be built by following these steps:
 4. After a successful build output will be in the `target/VAR`
    subdirectory
 
-# AFDKO 5.0.0b15
+# About AFDKO 5.0.0b15
 
 The AFDKO release that can build these sources is fully-featured
 but experimental. The current (at the time of writing) 4.0.1 release
