@@ -63,7 +63,7 @@ from fontTools.designspaceLib import (
 # constants
 RTL_GROUP = 'RTL_KERNING'
 RTL_TAGS = ['_ARA', '_HEB', '_RTL']
-SHORTINSTNAMEKEY = 'com.adobe.shortInstanceName'
+SHORTINSTNAMEKEY = 'com.adobe.type.shortInstanceName'
 GROUPSPLITSUFFIX = '_split'
 
 
@@ -667,10 +667,9 @@ class KerningSanitizer(object):
         for group in self.empty_groups:
             print(f'group {group} is empty')
         for group in self.invalid_groups:
-            glyph_order = {gn: i for (i, gn) in enumerate(groups.keys())}
-            glyph_set = self.source_groups[group]
+            glyph_set = set(self.source_groups[group])
             extraneous_glyphs = sorted(glyph_set - self.source_glyphs,
-                key=lambda item: self.source_glyph_order[item])
+                key=lambda item: self.source_glyph_order.get(item, item))
             print(
                 f'group {group} contains extraneous glyph(s): '
                 f'[{", ".join(extraneous_glyphs)}]')
@@ -688,11 +687,11 @@ class KerningSanitizer(object):
                 set(pair) - self.valid_items, key=pair.index)
             for item in invalid_items:
                 if is_group(item):
-                    item_type = 'group'
+                    item_type = 'invalid group'
                 else:
-                    item_type = 'glyph'
+                    item_type = 'non-existent glyph'
                 print(
-                    f'pair ({pair[0]} {pair[1]}) references non-existent '
+                    f'pair ({pair[0]} {pair[1]}) references '
                     f'{item_type} {item}'
                 )
 
@@ -700,7 +699,7 @@ class KerningSanitizer(object):
 class KernProcessor(object):
     def __init__(
         self, adapter, groups=None, kerning=None, reference_groups=None,
-        left_glyph_to_group=None, right_glyph_to_group=None,
+        left_glyph_to_group={}, right_glyph_to_group={},
         option_dissolve=False, ignore_suffix=None
     ):
         self.a = adapter
@@ -908,10 +907,10 @@ class KernProcessor(object):
         if not is_group(right) and right in self.right_glyph_to_group:
             right_group = self.right_glyph_to_group[right]
         if left_group is None and right_group is None:
-            return []
+            return ([], False)
         candidate_pairs = [(left_group, right), (left, right_group),
                            (left_group, right_group)]
-        return [ c for c in candidate_pairs if c in self.kerning ]
+        return ([ c for c in candidate_pairs if c in self.kerning ], True)
 
     def _find_exceptions(self):
         '''
@@ -930,7 +929,7 @@ class KernProcessor(object):
 
         for pair, value in self.kerning.items():
             std_map, exp_map = self._get_class_maps(pair)
-            fallbacks = self._get_fallbacks(pair)
+            fallbacks, is_except = self._get_fallbacks(pair)
             if len(fallbacks) > 0:
                 assert exp_map is not None
                 for f in fallbacks:
@@ -941,7 +940,10 @@ class KernProcessor(object):
                 if self.a.value_is_zero(value):
                     self.pairs_unprocessed.append(pair)
                 else:
-                    std_map[pair] = value
+                    if is_except:
+                        exp_map[pair] = value
+                    else:
+                        std_map[pair] = value
                     self.pairs_processed.append(pair)
 
 
@@ -1051,7 +1053,8 @@ class run(object):
         if not args:
             args = Defaults()
 
-        assert adapter.has_data()
+        if not (adapter and adapter.has_data()):
+            return
 
         self.a = adapter
         self.minKern = args.min_value
@@ -1078,7 +1081,10 @@ class run(object):
             self.write_locations(self.a, locations_path, args.user_values)
 
     def make_header(self, args):
-        ps_name = self.a.postscript_font_name()
+        try:
+            ps_name = self.a.postscript_font_name()
+        except Exception:
+            ps_name = None
         header = []
         if args.write_timestamp:
             header.append(f'# Created: {time.ctime()}')
