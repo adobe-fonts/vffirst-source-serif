@@ -2,7 +2,25 @@
 <glyph name="four.tosf" format="2">
 	<advance width="490"/>
 	<outline>
-		<component base="four.osf" xOffset="-5"/>
+		<contour>
+			<point x="317" y="-140" type="line"/>
+			<point x="345" y="-140" type="line"/>
+			<point x="345" y="543" type="line"/>
+			<point x="327" y="543" type="line"/>
+			<point x="24" y="79" type="line"/>
+			<point x="24" y="59" type="line"/>
+			<point x="466" y="59" type="line"/>
+			<point x="466" y="85" type="line"/>
+			<point x="46" y="85" type="line"/>
+			<point x="46" y="95" type="line"/>
+			<point x="39" y="68" type="line"/>
+			<point x="182" y="288" type="line"/>
+			<point x="325" y="508" type="line"/>
+			<point x="310" y="503" type="line"/>
+			<point x="317" y="503" type="line"/>
+			<point x="317" y="74" type="line"/>
+			<point x="317" y="65" type="line"/>
+		</contour>
 	</outline>
 	<lib>
 		<dict>

@@ -2,7 +2,48 @@
 <glyph name="five.tosf" format="2">
 	<advance width="546"/>
 	<outline>
-		<component base="five.osf" xOffset="10"/>
+		<contour>
+			<point x="248" y="-109" type="curve" smooth="yes"/>
+			<point x="393" y="-109"/>
+			<point x="487" y="-31"/>
+			<point x="487" y="100" type="curve" smooth="yes"/>
+			<point x="487" y="228"/>
+			<point x="402" y="300"/>
+			<point x="275" y="300" type="curve" smooth="yes"/>
+			<point x="230" y="300"/>
+			<point x="180" y="287"/>
+			<point x="143" y="257" type="curve"/>
+			<point x="136" y="259" type="line"/>
+			<point x="161" y="543" type="line"/>
+			<point x="144" y="523" type="line"/>
+			<point x="474" y="523" type="line"/>
+			<point x="474" y="555" type="line"/>
+			<point x="130" y="555" type="line"/>
+			<point x="104" y="252" type="line"/>
+			<point x="130" y="240" type="line"/>
+			<point x="165" y="261"/>
+			<point x="212" y="272"/>
+			<point x="269" y="272" type="curve" smooth="yes"/>
+			<point x="379" y="272"/>
+			<point x="454" y="208"/>
+			<point x="454" y="98" type="curve" smooth="yes"/>
+			<point x="454" y="-15"/>
+			<point x="373" y="-81"/>
+			<point x="248" y="-81" type="curve" smooth="yes"/>
+			<point x="190" y="-81"/>
+			<point x="159" y="-76"/>
+			<point x="108" y="-57" type="curve"/>
+			<point x="144" y="-81" type="line"/>
+			<point x="117" y="-17" type="line" smooth="yes"/>
+			<point x="108" y="5"/>
+			<point x="97" y="15"/>
+			<point x="80" y="15" type="curve" smooth="yes"/>
+			<point x="65" y="15"/>
+			<point x="56" y="8"/>
+			<point x="53" y="-8" type="curve"/>
+			<point x="75" y="-76"/>
+			<point x="139" y="-109"/>
+		</contour>
 	</outline>
 	<lib>
 		<dict>

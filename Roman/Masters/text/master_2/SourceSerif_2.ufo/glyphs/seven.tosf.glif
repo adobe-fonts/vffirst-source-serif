@@ -2,7 +2,18 @@
 <glyph name="seven.tosf" format="2">
 	<advance width="560"/>
 	<outline>
-		<component base="seven.osf" xOffset="9"/>
+		<contour>
+			<point x="113" y="-109" type="line"/>
+			<point x="287" y="-109" type="line"/>
+			<point x="521" y="428" type="line"/>
+			<point x="521" y="515" type="line"/>
+			<point x="59" y="515" type="line"/>
+			<point x="59" y="375" type="line"/>
+			<point x="421" y="375" type="line"/>
+			<point x="436" y="354" type="line"/>
+			<point x="436" y="425" type="line"/>
+			<point x="103" y="-99" type="line"/>
+		</contour>
 	</outline>
 	<lib>
 		<dict>

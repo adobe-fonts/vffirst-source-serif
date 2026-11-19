@@ -17,13 +17,13 @@ table OS/2 {
 
 # GPOS -----------------------------------
 
-feature mark {
-    include (mark.fea);
-} mark;
+# feature mark {
+#     include (mark.fea);
+# } mark;
 
-feature mkmk {
-    include (mkmk.fea);
-} mkmk;
+# feature mkmk {
+#     include (mkmk.fea);
+# } mkmk;
 
 feature kern {
     lookupflag IgnoreMarks;
@@ -31,5 +31,5 @@ feature kern {
         include (kern.fea);
     } KERN;
 
-    include (kern_ctxt.fea);
+    # include (kern_ctxt.fea);
 } kern;
